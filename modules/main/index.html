@@ -1,0 +1,9 @@
+<div ng-controller="MainCtrl">
+	<div ng-repeat="element in manifest" ng-include="'partials/'+element.type+'.html'"></div>
+</div>
+
+<div class="container">
+	<h1>{{data.welcome}}</h1>
+	<h4>{{config.parseAppId}}</h4>
+	<p>{{response}}</p>
+</div>
